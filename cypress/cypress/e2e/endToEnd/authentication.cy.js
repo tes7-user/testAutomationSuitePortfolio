@@ -2,10 +2,11 @@ import { loginUI } from "../../models/POM/loginComponent";
 import { findElement } from "../../utilities/elementCheckout";
 import { extractAndEnterUserPassword } from "../../utilities/credentials";
 
-describe("Authentication:", () => {
+describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
   beforeEach("Setup the environment", () => {
     cy.visit("/");
   });
+
   it("Invalid Credentials", () => {
     loginUI("testUser12", "invalidPassword");
     cy.get(findElement("errorMessage")).should(
@@ -14,7 +15,7 @@ describe("Authentication:", () => {
     );
   });
 
-  it("Invalid Credentials: whitespace", () => {
+  it("Blank Field Validation", () => {
     loginUI(" ", " ");
     cy.get(findElement("errorMessage")).contains(
       "The username and password could not be verified."

@@ -26,4 +26,7 @@ export const registration = {
 
 export const loggedInPage = {
   leftPannel: '[id="leftPanel"]',
+  transactionTable: '[id="accountTable"]',
+  transactionTableHeaders: "thead",
+  transactionTableBody: "tbody > :nth-child",
 };

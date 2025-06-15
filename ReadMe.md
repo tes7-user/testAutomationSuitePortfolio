@@ -7,14 +7,15 @@ what will it cover
 
 ### Test Cases
 
-<u>UI</u>
+<u>E2E</u>
 | Feature | Test Case | Steps | Expected Result |
 | ---------------- | ---------------------------- | ------------------------------------------ | ----------------------------------------- |
-| Authentication | UI-01 Valid Login | Open homepage → enter valid creds → submit | Redirect to overview with welcome message |
-| | UI-02 Invalid Login | Enter invalid creds → submit | Error displayed, stay on login |
-| | UI-03 Blank Field Validation | Leave fields empty → submit | Show validation message |
-| Registration | UI-04 User Registration | Click “Register” → fill form → submit | Success redirect to login |
-| Account Overview | UI-05 View Accounts | Log in → check “Accounts Overview” | Display accounts table with balances |
+| Authentication | E2E-01 Valid Login | Open homepage → enter valid creds → submit | Redirect to overview with welcome message |
+| | E2E-02 Invalid Login | Enter invalid creds → submit | Error displayed, stay on login |
+| | E2E-03 Blank Field Validation | Leave fields empty → submit | Show validation message |
+| Registration | E2E-04 User Registration | Click “Register” → fill form → submit | Success redirect to login |
+| | E2E-05, E2E-06 Validation Errors | Click “Register” → mismatch password, no values filled → submit | Validation errors trigered |  
+| Account Overview | E2E-07 View Accounts | Log in → check “Accounts Overview” | Display accounts table with balances |
 
 #### Instalation
 
