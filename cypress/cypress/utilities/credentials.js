@@ -6,3 +6,9 @@ export function extractAndEnterUserPassword() {
   });
   return decreptedPass;
 }
+export const generateRandomString = (len) =>
+  Array.from({ length: len }, () =>
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".charAt(
+      Math.floor(Math.random() * 62)
+    )
+  ).join("");

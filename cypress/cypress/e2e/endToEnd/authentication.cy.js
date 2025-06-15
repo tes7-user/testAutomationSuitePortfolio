@@ -1,6 +1,6 @@
 import { loginUI } from "../../models/POM/loginComponent";
 import { findElement } from "../../utilities/elementCheckout";
-import { extractAndEnterUserPassword } from "../../utilities/extractPassword";
+import { extractAndEnterUserPassword } from "../../utilities/credentials";
 
 describe("Authentication:", () => {
   beforeEach("Setup the environment", () => {
