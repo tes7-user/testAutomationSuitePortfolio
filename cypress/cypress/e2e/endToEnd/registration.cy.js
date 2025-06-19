@@ -9,7 +9,7 @@ describe("Registration: E2E-04, E2E-05, E2E-06", () => {
     cy.get(findElement("registrationForm")).should("be.visible");
   });
 
-  it.only("E2E-04 Valid Registration", () => {
+  it("E2E-04 Valid Registration", () => {
     genericForm("firstName", "Eitan");
     genericForm("lastName", "Granov");
     genericForm("address", "10 downing street");

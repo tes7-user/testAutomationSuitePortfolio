@@ -1,4 +1,4 @@
-import { loginUI } from "../../models/POM/loginComponent";
+import LoginUI from "../../models/POM/loginComponent";
 import { findElement } from "../../utilities/elementCheckout";
 import { extractAndEnterUserPassword } from "../../utilities/credentials";
 
@@ -7,8 +7,11 @@ describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
     cy.visit("/");
   });
 
-  it("Invalid Credentials", () => {
-    loginUI("testUser12", "invalidPassword");
+  it.only("Invalid Credentials", () => {
+    const login = new LoginUI();
+    login.fillUsername("testUser12");
+    login.fillPassword("invalidPassword");
+    login.submitButton();
     cy.get(findElement("errorMessage")).should(
       "have.text",
       "The username and password could not be verified."
@@ -16,14 +19,20 @@ describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
   });
 
   it("Blank Field Validation", () => {
-    loginUI(" ", " ");
+    const login = new LoginUI();
+    login.fillUsername(" ");
+    login.fillPassword(" ");
+    login.submitButton();
     cy.get(findElement("errorMessage")).contains(
       "The username and password could not be verified."
     );
   });
 
   it("Valid Credentials", () => {
-    loginUI("john", extractAndEnterUserPassword());
+    const login = new LoginUI();
+    login.fillUsername("john");
+    login.fillPassword(extractAndEnterUserPassword());
+    login.submitButton();
     cy.url().should("include", "overview.htm");
   });
 });
