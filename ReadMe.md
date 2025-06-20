@@ -32,9 +32,9 @@ Each test framework is organized in its own folder. Setup instructions are avail
 
 | Framework  | Folder              | Setup Instructions                       |
 | ---------- | ------------------- | ---------------------------------------- |
-| Cypress    | `/cypress-tests`    | [📘 Cypress README](./cypress/readMe.md) |
-| Playwright | `/playwright-tests` | _Coming soon – separate app under test_  |
-| Selenium   | `/selenium-tests`   | _Coming soon – separate app under test_  |
+| Cypress    | `/cypress`    | [📘 Cypress README](./cypress/readMe.md) |
+| Playwright | `/playwright` | _Coming soon – separate app under test_  |
+| Selenium   | `/selenium`   | _Coming soon – separate app under test_  |
 
 To run Cypress tests (ParaBank):
 
