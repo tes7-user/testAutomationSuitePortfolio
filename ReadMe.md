@@ -1,22 +1,45 @@
 # Introduction
 
-why you are doing it
-what will it cover
+This repository is a unified test automation suite showcasing cross-framework testing practices using:
 
-## Folder Structure
+- ✅ Cypress (implemented) – targets the **ParaBank Demo Application**
+- 🚧 Playwright (coming soon) – testing a different web application
+- 🚧 Selenium (coming soon) – testing a different web application
 
-### Test Cases
+### Why this project?
 
-<u>E2E</u>
-| Feature | Test Case | Steps | Expected Result |
-| ---------------- | ---------------------------- | ------------------------------------------ | ----------------------------------------- |
-| Authentication | E2E-01 Valid Login | Open homepage → enter valid creds → submit | Redirect to overview with welcome message |
-| | E2E-02 Invalid Login | Enter invalid creds → submit | Error displayed, stay on login |
-| | E2E-03 Blank Field Validation | Leave fields empty → submit | Show validation message |
-| Registration | E2E-04 User Registration | Click “Register” → fill form → submit | Success redirect to login |
-| | E2E-05, E2E-06 Validation Errors | Click “Register” → mismatch password, no values filled → submit | Validation errors trigered |  
-| Account Overview | E2E-07 View Accounts | Log in → check “Accounts Overview” | Display accounts table with balances |
+The goal of this project is to:
 
-#### Instalation
+- Demonstrate real-world **E2E and API test automation** across multiple frameworks
+- Provide portfolio-quality examples for **interview preparation**, **team onboarding**, or **tool evaluation**
+- Apply **design patterns** like the Page Object Model (POM), modular helpers, and clean separation of test logic
 
-where can they find the instruction on how to install and run the project
+### What this project covers:
+
+- Cypress: UI + API tests for login, registration, account activity (ParaBank)
+- Playwright: (coming soon) UI testing on a different modern web application
+- Selenium: (coming soon) UI testing on a classic enterprise-style application
+- Reusable structure, test case documentation, and scalable folder layout
+- Common test flows implemented in multiple frameworks for comparison
+
+> 📝 **Note:** This project demonstrates multiple best practices for learning and showcasing flexibility. In real-world scenarios, teams typically choose a single test framework depending on project goals.
+
+---
+
+#### Installation
+
+Each test framework is organized in its own folder. Setup instructions are available in each directory:
+
+| Framework  | Folder              | Setup Instructions                             |
+| ---------- | ------------------- | ---------------------------------------------- |
+| Cypress    | `/cypress-tests`    | [📘 Cypress README](./cypress-tests/README.md) |
+| Playwright | `/playwright-tests` | _Coming soon – separate app under test_        |
+| Selenium   | `/selenium-tests`   | _Coming soon – separate app under test_        |
+
+To run Cypress tests (ParaBank):
+
+```bash
+cd cypress-tests
+npm install
+npx cypress open
+```

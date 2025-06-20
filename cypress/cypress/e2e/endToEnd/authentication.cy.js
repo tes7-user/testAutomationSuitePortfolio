@@ -1,13 +1,13 @@
 import LoginUI from "../../models/POM/loginComponent";
 import { findElement } from "../../utilities/elementCheckout";
-import { extractAndEnterUserPassword } from "../../utilities/credentials";
+import extractAndEnterUserPassword from "../../utilities/credentials";
 
 describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
   beforeEach("Setup the environment", () => {
     cy.visit("/");
   });
 
-  it.only("Invalid Credentials", () => {
+  it("E2E-02 Invalid Credentials", () => {
     const login = new LoginUI();
     login.fillUsername("testUser12");
     login.fillPassword("invalidPassword");
@@ -18,7 +18,7 @@ describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
     );
   });
 
-  it("Blank Field Validation", () => {
+  it("E2E-03 Blank Field Validation", () => {
     const login = new LoginUI();
     login.fillUsername(" ");
     login.fillPassword(" ");
@@ -28,7 +28,7 @@ describe("Authentication: E2E-01, E2E-02, E2E-03", () => {
     );
   });
 
-  it("Valid Credentials", () => {
+  it("E2E-01 Valid Credentials", () => {
     const login = new LoginUI();
     login.fillUsername("john");
     login.fillPassword(extractAndEnterUserPassword());

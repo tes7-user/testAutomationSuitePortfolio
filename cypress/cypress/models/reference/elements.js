@@ -29,4 +29,5 @@ export const loggedInPage = {
   transactionTable: '[id="accountTable"]',
   transactionTableHeaders: "thead",
   transactionTableBody: "tbody > :nth-child",
+  firstTransaction: 'a[href*="activity.htm?id="]',
 };

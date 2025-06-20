@@ -1,4 +1,4 @@
-export function extractAndEnterUserPassword() {
+export default function extractAndEnterUserPassword() {
   let encryptedPass = Cypress.config("cred").split(",");
   let decreptedPass = "";
   encryptedPass.map((eachValue) => {
