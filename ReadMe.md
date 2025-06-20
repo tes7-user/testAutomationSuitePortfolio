@@ -30,11 +30,11 @@ The goal of this project is to:
 
 Each test framework is organized in its own folder. Setup instructions are available in each directory:
 
-| Framework  | Folder              | Setup Instructions                             |
-| ---------- | ------------------- | ---------------------------------------------- |
-| Cypress    | `/cypress-tests`    | [📘 Cypress README](./cypress-tests/README.md) |
-| Playwright | `/playwright-tests` | _Coming soon – separate app under test_        |
-| Selenium   | `/selenium-tests`   | _Coming soon – separate app under test_        |
+| Framework  | Folder              | Setup Instructions                       |
+| ---------- | ------------------- | ---------------------------------------- |
+| Cypress    | `/cypress-tests`    | [📘 Cypress README](./cypress/readMe.md) |
+| Playwright | `/playwright-tests` | _Coming soon – separate app under test_  |
+| Selenium   | `/selenium-tests`   | _Coming soon – separate app under test_  |
 
 To run Cypress tests (ParaBank):
 
