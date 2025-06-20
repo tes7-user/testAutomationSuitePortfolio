@@ -38,7 +38,7 @@ It is designed as a real-world, portfolio-ready framework that demonstrates mode
 | Authentication | API-01       | `/login`                          | POST   | Login with valid credentials          | 200 OK with customer ID                                          |
 |                | API-02       | `/login`                          | POST   | Login with invalid credentials        | 400 Unauthorized or error message                                |
 | Transfer Funds | API-03       | `/parabank/services/bank/deposit` | POST   | Submit valid deposit request          | 200 OK with confirmation message including account ID and amount |
-| Transfer Funds | API-04       | `/parabank/services/bank/deposit` | POST   | Attempt deposit to invalid account ID | 400 Bad Request with error message about account 0               |
+|                | API-04       | `/parabank/services/bank/deposit` | POST   | Attempt deposit to invalid account ID | 400 Bad Request with error message about account 0               |
 
 ## 🛠 Installation
 
