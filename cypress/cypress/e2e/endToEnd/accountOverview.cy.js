@@ -5,7 +5,6 @@ import { findElement } from "../../utilities/elementCheckout";
 describe("Account Overview: E2E-07", () => {
   beforeEach("Setup the environment", () => {
     cy.visit("/");
-    console.log(extractAndEnterUserPassword());
     loginUI("john", extractAndEnterUserPassword());
     cy.get(findElement("transactionTable")).should("be.visible");
   });
