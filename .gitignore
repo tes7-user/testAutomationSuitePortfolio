@@ -1,1 +1,6 @@
 /selenium
+**/node_modules
+**/.cache
+**/playwright-report
+**/blob-report
+**/test-results
