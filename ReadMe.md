@@ -3,21 +3,20 @@
 This repository is a unified test automation suite showcasing cross-framework testing practices using:
 
 - ✅ Cypress (implemented) – targets the **ParaBank Demo Application**
-- 🚧 Playwright (coming soon) – testing a different web application
+- ✅ Playwright (implemented) – targets the **Shady Meadows B&B Application**
 - 🚧 Selenium (coming soon) – testing a different web application
 
 ### Why this project?
 
 The goal of this project is to:
 
-- Demonstrate real-world **E2E and API test automation** across multiple frameworks
 - Provide portfolio-quality examples for **interview preparation**, **team onboarding**, or **tool evaluation**
 - Apply **design patterns** like the Page Object Model (POM), modular helpers, and clean separation of test logic
 
 ### What this project covers:
 
-- Cypress: UI + API tests for login, registration, account activity (ParaBank)
-- Playwright: (coming soon) UI testing on a different modern web application
+- Cypress: UI + API for (ParaBank)
+- Playwright: UI (AutomShady Meadows B&B)
 - Selenium: (coming soon) UI testing on a classic enterprise-style application
 - Reusable structure, test case documentation, and scalable folder layout
 - Common test flows implemented in multiple frameworks for comparison
@@ -30,11 +29,11 @@ The goal of this project is to:
 
 Each test framework is organized in its own folder. Setup instructions are available in each directory:
 
-| Framework  | Folder              | Setup Instructions                       |
-| ---------- | ------------------- | ---------------------------------------- |
-| Cypress    | `/cypress`    | [📘 Cypress README](./cypress/readMe.md) |
-| Playwright | `/playwright` | _Coming soon – separate app under test_  |
-| Selenium   | `/selenium`   | _Coming soon – separate app under test_  |
+| Framework  | Folder        | Setup Instructions                             |
+| ---------- | ------------- | ---------------------------------------------- |
+| Cypress    | `/cypress`    | [📘 Cypress README](./cypress/readMe.md)       |
+| Playwright | `/playwright` | [📘 Playwright README](./playwright/readMe.md) |
+| Selenium   | `/selenium`   | _Coming soon – separate app under test_        |
 
 To run Cypress tests (ParaBank):
 

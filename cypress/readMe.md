@@ -15,11 +15,6 @@ It is designed as a real-world, portfolio-ready framework that demonstrates mode
 
 ## 📦 What This Covers
 
-- UI test cases: login, registration, account overview
-- API tests for login and deposit operations
-- Swagger-based endpoint validation
-- Negative test coverage for bad credentials or invalid account actions
-
 ### E2E
 
 | Feature          | Test Case ID             | Steps                                          | Expected Result                           |
@@ -49,8 +44,6 @@ npm install
 npx cypress open
 
 > 📝 **Note**:
-> This project demonstrates multiple best practices in test automation, including the use of the **Page Object Model (POM)**, a **reference architecture**, reusable helper functions, and modular folder structures.
->
 > The goal is to showcase a variety of techniques for learning and portfolio purposes. In real-world projects, teams typically standardize on **one primary design pattern or structure**, depending on the context, team preferences, and complexity of the application.
 >
 > **Applying several best practices together here is intentional to highlight flexibility and knowledge; not necessarily a reflection of how you would structure a production system.**
