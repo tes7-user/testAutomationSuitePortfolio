@@ -43,7 +43,7 @@ It is designed as a real-world, portfolio-ready framework that demonstrates mode
 npm install
 npx cypress open
 
-> 📝 **Note**:
+> **Note**:
 > The goal is to showcase a variety of techniques for learning and portfolio purposes. In real-world projects, teams typically standardize on **one primary design pattern or structure**, depending on the context, team preferences, and complexity of the application.
 >
 > **Applying several best practices together here is intentional to highlight flexibility and knowledge; not necessarily a reflection of how you would structure a production system.**
