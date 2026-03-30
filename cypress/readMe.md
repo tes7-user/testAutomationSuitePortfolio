@@ -1,19 +1,19 @@
 # Introduction
 
-# 🧪 ParaBank Test Automation Suite
+# ParaBank Test Automation Suite
 
 This project is a test automation suite targeting the [**ParaBank Demo Application**](https://parabank.parasoft.com/parabank/index.htm) using **Cypress** for both **end-to-end (E2E)** and **API** testing.
 
 It is designed as a real-world, portfolio-ready framework that demonstrates modern test automation practices including:
 
-- ✅ Page Object Model (POM)
-- ✅ Data-driven testing
-- ✅ API integration testing
-- ✅ Functional UI validations
+- Page Object Model (POM)
+- Data-driven testing
+- API integration testing
+- Functional UI validations
 
-> 🔧 This repo currently uses **Cypress** to test ParaBank.
+> This repo currently uses **Cypress** to test ParaBank.
 
-## 📦 What This Covers
+## What This Covers
 
 ### E2E
 
@@ -37,7 +37,7 @@ It is designed as a real-world, portfolio-ready framework that demonstrates mode
 
 ## 🛠 Installation
 
-### ✅ Cypress Setup
+### Cypress Setup
 
 ```bash
 npm install
