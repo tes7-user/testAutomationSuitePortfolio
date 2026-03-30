@@ -1,4 +1,4 @@
-## 🎯 Test Automation Suite – Playwright Edition
+## Test Automation Suite – Playwright Edition
 
 This repository demonstrates a basic end-to-end UI test suite built with **[Playwright](https://playwright.dev/)** for the [Automation in Testing](https://automationintesting.online/) demo site. It serves as a **learning portfolio** to showcase test structure, reporting, and good practices using modern automation tools.
 
@@ -6,7 +6,7 @@ The focus is strictly on **UI testing**, covering common flows across the **Home
 
 ---
 
-## 📦 What This Covers
+## What This Covers
 
 ### UI
 
@@ -22,16 +22,16 @@ The focus is strictly on **UI testing**, covering common flows across the **Home
 
 ---
 
-## 🛠 Installation
+## Installation
 
-### ✅ Playwright Setup
+### Playwright Setup
 
 ```bash
 npm install
 npx playwright test --ui
 ```
 
-> 📝 **Note**:  
+> **Note**:  
 > The goal is to showcase a variety of techniques for learning and portfolio purposes. In real-world projects, teams typically standardize on **one primary design pattern or structure**, depending on the context, team preferences, and complexity of the application.
 >
 > **Applying several best practices together here is intentional to highlight flexibility and knowledge; not necessarily a reflection of how you would structure a production system.**
